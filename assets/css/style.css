@@ -1,11 +1,14 @@
+
+/* Crystal image size */
 .black, .yellow, .green, .purple {
 width: 200px;
 height: 250px;
 }
+/* Overall background color */
 body {
     background-color: black;
 }
-
+/* Game title style */
 h1 {
     font-family: 'Changa', sans-serif;
     font-size: 70px;
@@ -15,7 +18,7 @@ h1 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+/* Instructions style */
 .instructions {
     font-family: 'Changa', sans-serif;
     font-size: 25px;
@@ -24,6 +27,8 @@ h1 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/* Game Data Headings Style */
 .target, .Wins, .Losses, .score {
     font-family: 'Changa', sans-serif;
     font-size: 50px;
@@ -40,6 +45,7 @@ h1 {
     margin-top: 30px;
 }
 
+/* Active data style */
 .gameData {
     color: rgb(223, 159, 63);
     font-family: 'Frijole', cursive;

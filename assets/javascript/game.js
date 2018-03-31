@@ -44,7 +44,7 @@ $("#image2").on("click", ".black", function() {
         Wins += 1;
         $("#Win").text(Wins);
         alert("You Win!");
-    reset();}
+        reset();}
     else if (counter > targetNumber) {
         $("#result").text(counter);
         Losses += 1;
@@ -53,44 +53,42 @@ $("#image2").on("click", ".black", function() {
         reset();
         
     }});
-    // Image Crystal Three- yellow
+// Image Crystal Three- yellow
 $("#image3").on("click", ".yellow", function() {
         counter += crystal3;
         $("#result").text(counter);
         console.log(counter);
-        if (counter === targetNumber) {
-            $("#result").text(counter);
-            Wins += 1;
-            $("#Win").text(Wins);
+    if (counter === targetNumber) {
+        $("#result").text(counter);
+        Wins += 1;
+        $("#Win").text(Wins);
         alert("You Win!");
-    reset();}
-        else if (counter > targetNumber) {
-            $("#result").text(counter);
-            Losses += 1;
-            $("#Lose").text(Losses);
-            alert("Sorry, you lost!");
-            reset();
-        }});
-        // Image Crystal Four- purple
+        reset();}
+    else if (counter > targetNumber) {
+        $("#result").text(counter);
+        Losses += 1;
+        $("#Lose").text(Losses);
+        alert("Sorry, you lost!");
+        reset();
+    }});
+// Image Crystal Four- purple
 $("#image4").on("click", ".purple", function() {
-            counter += crystal4;
-            $("#result").text(counter);
-            console.log(counter);
-            if (counter === targetNumber) {
-                $("#result").text(counter);
-                Wins += 1;
-                $("#Win").text(Wins);
-                alert("You Win!");
-            reset();}
-            else if (counter > targetNumber) {
-                $("#result").text(counter);
-                Losses += 1;
-                $("#Lose").text(Losses);
-                alert("Sorry, you lost!");
-                reset();}
-
-                
-            });
+        counter += crystal4;
+        $("#result").text(counter);
+        console.log(counter);
+    if (counter === targetNumber) {
+        $("#result").text(counter);
+        Wins += 1;
+        $("#Win").text(Wins);
+        alert("You Win!");
+        reset();}
+    else if (counter > targetNumber) {
+        $("#result").text(counter);
+        Losses += 1;
+        $("#Lose").text(Losses);
+        alert("Sorry, you lost!");
+        reset();
+    }});
 // Reset Game Function
 var reset = function() {
     counter=0;
